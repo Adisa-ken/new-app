@@ -1,0 +1,42 @@
+[debug] [2026-11-12T18:16:57.672Z] ----------------------------------------------------------------------
+[debug] [2026-11-12T18:16:57.682Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\abdulhakeem\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2026-11-12T18:16:57.683Z] CLI Version:   15.36.0
+[debug] [2026-11-12T18:16:57.683Z] Platform:      win32
+[debug] [2026-11-12T18:16:57.683Z] Node Version:  v26.13.0
+[debug] [2026-11-12T18:16:57.683Z] Detected Agent: unknown
+[debug] [2026-11-12T18:16:57.683Z] Time:          Thu Nov 12 2026 21:16:57 GMT+0300 (Arabian Standard Time)
+[debug] [2026-11-12T18:16:57.683Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-11-12T18:16:57.718Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2026-11-12T18:16:58.081Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-11-12T18:16:58.082Z] > authorizing via signed-in user (kadisa2030@gmail.com)
+[debug] [2026-11-12T18:16:58.084Z] Checked if tokens are valid: false, expires at: 1794507860948
+[debug] [2026-11-12T18:16:58.084Z] Checked if tokens are valid: false, expires at: 1794507860948
+[debug] [2026-11-12T18:16:58.085Z] > refreshing access token with scopes: []
+[debug] [2026-11-12T18:16:58.090Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-11-12T18:16:58.091Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-11-12T18:17:08.327Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): ConnectTimeoutError: Connect Timeout Error (attempted address: firebase-public.firebaseio.com:443, timeout: 10000ms)
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2026-11-12T18:17:08.337Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2026-11-12T18:17:08.340Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"type":"Buffer","data":[45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,53,56,50,54,50,50,52,51,97,98,100,100,54,56,97,52,55,99,48,98,55,50,51,49,13,10,67,111,110,116,101,110,116,45,68,105,115,112,111,115,105,116,105,111,110,58,32,102,111,114,109,45,100,97,116,97,59,32,110,97,109,101,61,34,114,101,102,114,101,115,104,95,116,111,107,101,110,34,13,10,13,10,49,47,47,48,51,71,78,87,105,52,97,101,70,115,100,45,67,103,89,73,65,82,65,65,71,65,77,83,83,81,70,45,76,57,73,114,57,83,77,49,106,95,102,97,84,50,54,103,113,85,72,72,76,50,115,109,65,48,98,104,73,109,105,116,68,71,76,84,52,119,106,100,77,57,65,118,81,74,83,113,118,119,82,50,56,99,81,119,67,108,54,56,77,79,75,107,119,120,79,79,88,114,71,69,98,74,109,89,75,69,82,48,88,82,57,53,51,82,51,77,87,70,80,87,97,98,69,13,10,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,53,56,50,54,50,50,52,51,97,98,100,100,54,56,97,52,55,99,48,98,55,50,51,49,13,10,67,111,110,116,101,110,116,45,68,105,115,112,111,115,105,116,105,111,110,58,32,102,111,114,109,45,100,97,116,97,59,32,110,97,109,101,61,34,99,108,105,101,110,116,95,105,100,34,13,10,13,10,53,54,51,53,56,52,51,51,53,56,54,57,45,102,103,114,104,103,109,100,52,55,98,113,110,101,107,105,106,53,105,56,98,53,112,114,48,51,104,111,56,52,57,101,54,46,97,112,112,115,46,103,111,111,103,108,101,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,13,10,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,53,56,50,54,50,50,52,51,97,98,100,100,54,56,97,52,55,99,48,98,55,50,51,49,13,10,67,111,110,116,101,110,116,45,68,105,115,112,111,115,105,116,105,111,110,58,32,102,111,114,109,45,100,97,116,97,59,32,110,97,109,101,61,34,99,108,105,101,110,116,95,115,101,99,114,101,116,34,13,10,13,10,106,57,105,86,90,102,83,56,107,107,67,69,70,85,80,97,65,101,74,86,48,115,65,105,13,10,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,53,56,50,54,50,50,52,51,97,98,100,100,54,56,97,52,55,99,48,98,55,50,51,49,13,10,67,111,110,116,101,110,116,45,68,105,115,112,111,115,105,116,105,111,110,58,32,102,111,114,109,45,100,97,116,97,59,32,110,97,109,101,61,34,103,114,97,110,116,95,116,121,112,101,34,13,10,13,10,114,101,102,114,101,115,104,95,116,111,107,101,110,13,10,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,53,56,50,54,50,50,52,51,97,98,100,100,54,56,97,52,55,99,48,98,55,50,51,49,13,10,67,111,110,116,101,110,116,45,68,105,115,112,111,115,105,116,105,111,110,58,32,102,111,114,109,45,100,97,116,97,59,32,110,97,109,101,61,34,115,99,111,112,101,34,13,10,13,10,13,10,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,53,56,50,54,50,50,52,51,97,98,100,100,54,56,97,52,55,99,48,98,55,50,51,49,45,45,13,10]}}): ConnectTimeoutError: Connect Timeout Error (attempted address: www.googleapis.com:443, timeout: 10000ms)
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2026-11-12T18:17:08.342Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2026-11-12T18:17:09.797Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\abdulhakeem\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:177:12)
+    at refreshTokens (C:\Users\abdulhakeem\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:618:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async getAccessToken (C:\Users\abdulhakeem\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:53:18)
+    at async Client.addAuthHeader (C:\Users\abdulhakeem\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:209:21)
+    at async Client.request (C:\Users\abdulhakeem\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:156:34)
+    at async getProjectPage (C:\Users\abdulhakeem\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:301:17)
+    at async getFirebaseProjectPage (C:\Users\abdulhakeem\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:318:23)
+    at async listFirebaseProjects (C:\Users\abdulhakeem\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:347:29)
+    at async addAlias (C:\Users\abdulhakeem\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\use.js:88:22)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
